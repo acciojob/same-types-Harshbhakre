@@ -1,8 +1,9 @@
 function isSameType(value1, value2) {
   if(typeof(value1)==typeof(value2)){
 	  return true;
-  }else{
-	  return false;
+  }else if(value1==NaN && value2==NaN){
+	  return true;
+  }  else{	  return false;
   } 
 }
 
